@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b2118">
+<meta name="description" content="UTKARSH by Team MindForge — solar-powered plant health monitoring and need-based irrigation for smarter agriculture.">
+<title>UTKARSH | Powering Smarter Agriculture</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--bg:#f5f7ef;--ink:#14251b;--muted:#657368;--green:#245c3e;--lime:#c8ef75;--dark:#0b2118;--line:#dce5d9;--white:#fff;--radius:24px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}
+nav{height:78px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:20;background:rgba(245,247,239,.91);backdrop-filter:blur(16px);border-bottom:1px solid rgba(20,37,27,.08)}
+.brand{display:flex;align-items:center;gap:11px;font-family:Manrope,sans-serif;font-weight:800;letter-spacing:.06em}.brand-mark{width:38px;height:38px;border-radius:13px;background:var(--dark);display:grid;place-items:center;color:var(--lime);font-size:22px}.brand small{display:block;font:600 9px 'DM Sans';letter-spacing:.18em;color:var(--muted);margin-top:2px}
+.navlinks{display:flex;gap:27px;align-items:center;font-size:13px;font-weight:600;color:#526257}.navlinks a:hover{color:var(--green)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:999px;background:var(--dark);color:white;font-weight:700;font-size:13px;border:1px solid var(--dark);transition:.2s}.nav-cta:hover,.btn:hover{background:var(--green);transform:translateY(-2px)}.btn.light{background:var(--lime);border-color:var(--lime);color:var(--dark)}.btn.outline{background:transparent;color:white;border-color:#ffffff55}.menu{display:none;background:none;border:0;font-size:25px}
+.hero{background:var(--dark);color:white;overflow:hidden;position:relative;padding:95px 0 86px}.hero:before{content:"";position:absolute;width:620px;height:620px;border-radius:50%;border:1px solid #ffffff12;right:-90px;top:-210px;box-shadow:0 0 0 65px #ffffff08,0 0 0 130px #ffffff05}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:45px;align-items:center;position:relative}.eyebrow{font-size:11px;letter-spacing:.19em;text-transform:uppercase;color:#a8c6a9;font-weight:700;display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";height:1px;width:27px;background:var(--lime)}h1,h2,h3{font-family:Manrope,sans-serif}h1{font-size:clamp(48px,6.3vw,82px);line-height:.99;letter-spacing:-.065em;margin:23px 0 24px;max-width:700px}h1 em{font-style:normal;color:var(--lime)}.hero p{color:#c0cec3;line-height:1.8;font-size:16px;max-width:540px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.hero-note{font-size:11px;color:#91a699;margin-top:30px;letter-spacing:.04em}
+.visual{min-height:420px;position:relative;display:grid;place-items:center}.orbit{width:min(390px,90%);aspect-ratio:1;border:1px solid #ffffff26;border-radius:50%;display:grid;place-items:center;position:relative}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #ffffff20;border-radius:50%}.orbit:before{inset:35px}.orbit:after{inset:75px}.plant{font-size:150px;filter:drop-shadow(0 20px 25px #0006);z-index:2}.sun{position:absolute;top:26px;right:43px;width:74px;height:74px;border-radius:50%;background:var(--lime);box-shadow:0 0 70px #c8ef7570}.orbit-tag{position:absolute;z-index:3;background:#17392a;border:1px solid #ffffff24;padding:11px 14px;border-radius:14px;font-size:11px;color:#e9f4e9;box-shadow:0 12px 35px #0003}.orbit-tag b{display:block;color:var(--lime);font-size:13px;margin-bottom:3px}.tag-a{left:-16px;top:90px}.tag-b{right:-20px;bottom:93px}.tag-c{left:12px;bottom:24px}
+.metrics{background:#fff;border-bottom:1px solid var(--line)}.metric-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:27px 0}.metric{padding:5px 24px;border-right:1px solid var(--line)}.metric:first-child{padding-left:0}.metric:last-child{border:0}.metric strong{font:800 24px Manrope;color:var(--green);display:block}.metric span{font-size:11px;color:var(--muted)}
+section{padding:100px 0}.section-head{max-width:650px;margin-bottom:44px}.kicker{color:var(--green);font-size:11px;letter-spacing:.17em;text-transform:uppercase;font-weight:800}.section-head h2{font-size:clamp(32px,4vw,49px);line-height:1.08;letter-spacing:-.05em;margin:13px 0}.section-head p{color:var(--muted);line-height:1.8;margin:0}.problem-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.problem-card{background:#fff;padding:29px;border-radius:var(--radius);border:1px solid var(--line);min-height:190px}.num{font:800 12px Manrope;color:#8a9a8b}.problem-card h3{font-size:20px;margin:23px 0 9px}.problem-card p{font-size:13px;color:var(--muted);line-height:1.75;margin:0}.insight{margin-top:18px;padding:25px 29px;border-radius:var(--radius);background:#e6efdF;display:flex;justify-content:space-between;align-items:center;gap:20px}.insight strong{font:700 18px Manrope;max-width:600px}.insight span{color:var(--green);font-size:12px;font-weight:700}
+.solution{background:#eaf0e5}.solution-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:55px;align-items:center}.solution-art{background:var(--dark);border-radius:30px;min-height:420px;display:grid;place-items:center;position:relative;overflow:hidden}.solution-art:before{content:"";position:absolute;width:300px;height:300px;border:1px solid #ffffff28;border-radius:50%;box-shadow:0 0 0 45px #ffffff09,0 0 0 90px #ffffff06}.solution-art .big-leaf{font-size:130px;z-index:1}.solar-chip{position:absolute;bottom:26px;left:25px;background:#ffffff13;border:1px solid #ffffff22;border-radius:13px;padding:12px 15px;color:#dcebdc;font-size:11px}.features{display:grid;gap:13px}.feature{display:grid;grid-template-columns:43px 1fr;gap:15px;padding:17px 0;border-bottom:1px solid #d4dfd1}.feature-icon{width:40px;height:40px;border-radius:13px;background:#d5e7c9;display:grid;place-items:center;font-size:18px}.feature h3{font-size:16px;margin:1px 0 5px}.feature p{font-size:12px;color:var(--muted);line-height:1.65;margin:0}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.step{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;min-height:185px}.step .n{font:800 11px Manrope;color:var(--green);letter-spacing:.1em}.step h3{font-size:18px;margin:17px 0 8px}.step p{font-size:12px;color:var(--muted);line-height:1.7;margin:0}.note{margin-top:18px;color:var(--muted);font-size:11px;line-height:1.7;padding:15px 18px;border-left:3px solid #9fc66d;background:#edf2e8}
+.ai-band{background:var(--dark);color:white;padding:70px 0}.ai-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.ai-band h2{font-size:clamp(30px,4vw,45px);letter-spacing:-.05em;line-height:1.1;margin:13px 0}.ai-band p{color:#b9cbbd;line-height:1.8;font-size:13px}.ai-points{display:grid;gap:12px}.ai-point{border:1px solid #ffffff20;background:#ffffff08;padding:17px 19px;border-radius:15px}.ai-point b{color:var(--lime);font:700 14px Manrope}.ai-point span{display:block;color:#b9cbbd;font-size:11px;margin-top:5px;line-height:1.6}
+.prototype{background:#fff}.prototype-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.proto-card{background:var(--bg);border:1px solid var(--line);border-radius:22px;padding:25px}.proto-card h3{font-size:18px;margin:0 0 17px}.proto-card ul{list-style:none;padding:0;margin:0;display:grid;gap:12px}.proto-card li{font-size:13px;color:#536257;display:flex;gap:10px;line-height:1.5}.proto-card li:before{content:"✓";color:var(--green);font-weight:800}
+.business{background:#eaf0e5}.business-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.business-card{background:#fff;border:1px solid var(--line);padding:24px;border-radius:20px}.business-card .symbol{font-size:23px}.business-card h3{font-size:17px;margin:15px 0 7px}.business-card p{font-size:12px;color:var(--muted);line-height:1.7;margin:0}.price-panel{margin-top:20px;background:var(--dark);color:white;border-radius:24px;padding:30px;display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.price-panel strong{display:block;font:800 30px Manrope;color:var(--lime)}.price-panel span{font-size:11px;color:#bdcdbf;line-height:1.6}.price-caveat{font-size:11px;color:#d4e0d4;margin-top:15px;line-height:1.6}
+.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.sdg{border:1px solid var(--line);border-radius:20px;padding:23px;background:#fff}.sdg .sdg-no{font:800 12px Manrope;color:var(--green)}.sdg h3{font-size:17px;margin:12px 0 6px}.sdg p{font-size:12px;color:var(--muted);line-height:1.7;margin:0}
+.cta{padding:85px 0;background:var(--dark);color:white}.cta-box{display:flex;justify-content:space-between;align-items:center;gap:35px}.cta h2{font-size:clamp(30px,4vw,48px);letter-spacing:-.05em;line-height:1.08;margin:13px 0}.cta p{color:#b9cbbd;line-height:1.7;font-size:13px;max-width:570px}.footer{background:#07170f;color:#a9b9ac;padding:26px 0;font-size:11px}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer strong{color:white;letter-spacing:.1em}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:850px){.navlinks{display:none;position:absolute;top:77px;left:0;right:0;background:var(--bg);padding:20px 24px 25px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu{display:block}.nav-cta{display:none}.hero-grid,.solution-grid,.ai-grid{grid-template-columns:1fr}.hero{padding:70px 0 55px}.visual{min-height:340px}.solution-art{min-height:300px}.metric-grid{grid-template-columns:repeat(2,1fr);gap:18px}.metric:nth-child(2){border:0}.metric:nth-child(3){padding-left:0}.steps{grid-template-columns:repeat(2,1fr)}.business-grid,.impact-grid{grid-template-columns:1fr 1fr}.cta-box{align-items:flex-start;flex-direction:column}}
+@media(max-width:560px){.wrap{width:min(100% - 32px,1160px)}nav{height:68px}.navlinks{top:67px}.hero{padding:58px 0 45px}h1{font-size:51px}.hero p{font-size:14px}.visual{min-height:290px}.orbit{width:280px}.plant{font-size:112px}.sun{width:55px;height:55px}.orbit-tag{font-size:9px;padding:9px 10px}.tag-a{left:-20px}.tag-b{right:-22px}.metric{padding:5px 13px}.metric strong{font-size:21px}section{padding:72px 0}.problem-grid,.steps,.prototype-grid,.business-grid,.impact-grid{grid-template-columns:1fr}.insight{align-items:flex-start;flex-direction:column}.price-panel{grid-template-columns:1fr;padding:25px}.price-panel strong{font-size:27px}.footer-inner{align-items:flex-start;flex-direction:column}.cta{padding:70px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*{transition:none!important}}
+</style>
+</head>
+<body>
+<nav>
+ <div class="wrap" style="display:flex;align-items:center;justify-content:space-between">
+  <a class="brand" href="#home"><span class="brand-mark">✳</span><span>UTKARSH<small>TEAM MINDFORGE</small></span></a>
+  <div class="navlinks" id="navlinks"><a href="#problem">The challenge</a><a href="#solution">Our solution</a><a href="#technology">Technology</a><a href="#business">Business</a><a href="#impact">Impact</a></div>
+  <a class="nav-cta" href="#connect">Partner with us ↗</a><button class="menu" id="menu" aria-label="Toggle navigation">☰</button>
+ </div>
+</nav>
+<main>
+<section class="hero" id="home">
+ <div class="wrap hero-grid">
+  <div class="reveal">
+   <div class="eyebrow">Agri-tech · Solar · Smart irrigation</div>
+   <h1>Grow with<br><em>intelligence.</em></h1>
+   <p>Meet UTKARSH — a plant-health monitoring and need-based irrigation system designed to help growers understand what their plants actually need.</p>
+   <div class="hero-actions"><a class="btn light" href="#solution">Explore UTKARSH <span>↗</span></a><a class="btn outline" href="#technology">See how it works</a></div>
+   <div class="hero-note">TEAM MINDFORGE &nbsp;·&nbsp; RUKMINI DEVI PUBLIC SCHOOL &nbsp;·&nbsp; DELHI, INDIA</div>
+  </div>
+  <div class="visual reveal" aria-label="Illustration of a growing plant with solar-powered monitoring">
+   <div class="orbit"><div class="sun"></div><div class="plant">🌱</div>
+    <div class="orbit-tag tag-a"><b>PLANT FIRST</b>Monitor water movement</div>
+    <div class="orbit-tag tag-b"><b>SMART RESPONSE</b>Need-based irrigation</div>
+    <div class="orbit-tag tag-c"><b>POWERED BY SUN</b>Solar-supported design</div>
+   </div>
+  </div>
+ </div>
+</section>
+<div class="metrics"><div class="wrap metric-grid">
+ <div class="metric"><strong>Plant-informed</strong><span>Monitoring approach</span></div>
+ <div class="metric"><strong>Solar-powered</strong><span>Designed for sustainable operation</span></div>
+ <div class="metric"><strong>₹2,000</strong><span>Approx. prototype cost per unit</span></div>
+ <div class="metric"><strong>25 units</strong><span>In estimated per-acre deployment</span></div>
+</div></div>
+<section id="problem"><div class="wrap">
+ <div class="section-head reveal"><div class="kicker">01 / The challenge</div><h2>Farmers need more than a watering schedule.</h2><p>Soil appearance and fixed timings do not always reveal a plant's actual water requirements or internal water movement.</p></div>
+ <div class="problem-grid">
+  <article class="problem-card reveal"><div class="num">01 — LIMITED VISIBILITY</div><h3>What is happening inside the plant?</h3><p>Growers may not have real-time information about plant water uptake and early signs of water stress.</p></article>
+  <article class="problem-card reveal"><div class="num">02 — INEFFICIENT IRRIGATION</div><h3>Fixed schedules miss changing needs.</h3><p>Watering by routine rather than measured conditions can lead to unnecessary watering or delayed irrigation.</p></article>
+  <article class="problem-card reveal"><div class="num">03 — RESOURCE PRESSURE</div><h3>Every resource matters.</h3><p>Water and land constraints make precise crop management especially important in dense urban regions.</p></article>
+  <article class="problem-card reveal"><div class="num">04 — ACCESSIBILITY</div><h3>Advanced monitoring should be approachable.</h3><p>Small-scale farmers and urban growers may not have access to advanced plant-monitoring technologies.</p></article>
+ </div>
+ <div class="insight reveal"><strong>The opportunity: move from schedule-based watering to plant-informed irrigation.</strong><span>THAT'S WHERE UTKARSH BEGINS ↗</span></div>
+</div></section>
+<section class="solution" id="solution"><div class="wrap solution-grid">
+ <div class="solution-art reveal"><div class="big-leaf">🌿</div><div class="solar-chip">☀ &nbsp; Solar-supported power system</div></div>
+ <div class="reveal"><div class="section-head" style="margin-bottom:25px"><div class="kicker">02 / Our solution</div><h2>Understand the plant. Then respond.</h2><p>UTKARSH combines plant-level sensing, soil monitoring and automated irrigation in one solar-powered concept.</p></div>
+  <div class="features">
+   <div class="feature"><div class="feature-icon">〰️</div><div><h3>Sap-flow-based plant monitoring</h3><p>Adds a signal about water movement within the plant, alongside soil conditions.</p></div></div>
+   <div class="feature"><div class="feature-icon">💧</div><div><h3>Need-based irrigation</h3><p>Sensor readings are compared with preset thresholds to help trigger irrigation when required.</p></div></div>
+   <div class="feature"><div class="feature-icon">☀️</div><div><h3>Solar-supported operation</h3><p>A solar panel with a tracker supports the system's power supply.</p></div></div>
+   <div class="feature"><div class="feature-icon">📊</div><div><h3>Clear plant-health indication</h3><p>An LED bar graph makes the system's current health indication easier to understand.</p></div></div>
+  </div>
+ </div>
+</div></section>
+<section id="technology"><div class="wrap">
+ <div class="section-head reveal"><div class="kicker">03 / Technology</div><h2>From sensor readings to irrigation action.</h2><p>The current prototype architecture connects sensing, processing, indication and an automatic irrigation response.</p></div>
+ <div class="steps">
+  <article class="step reveal"><div class="n">STEP 01</div><h3>Measure</h3><p>Sap-flow-based sensing, soil moisture and other parameter sensors collect readings.</p></article>
+  <article class="step reveal"><div class="n">STEP 02</div><h3>Process</h3><p>An Arduino receives and processes the sensor data.</p></article>
+  <article class="step reveal"><div class="n">STEP 03</div><h3>Evaluate</h3><p>Readings are compared with preset thresholds to indicate plant condition.</p></article>
+  <article class="step reveal"><div class="n">STEP 04</div><h3>Display</h3><p>An LED bar graph communicates the current health indication.</p></article>
+  <article class="step reveal"><div class="n">STEP 05</div><h3>Respond</h3><p>The irrigation mechanism activates when the system indicates a need.</p></article>
+  <article class="step reveal"><div class="n">STEP 06</div><h3>Power</h3><p>A solar panel with tracker supports the system's power supply.</p></article>
+ </div>
+ <div class="note reveal"><b>Electronics note:</b> The BC547 transistor is used in the prototype to amplify the xylem-related signal.</div>
+</div></section>
+<section class="ai-band"><div class="wrap ai-grid">
+ <div class="reveal"><div class="eyebrow">04 / Intelligence layer</div><h2>Making plant data more meaningful.</h2><p>AI is a proposed analysis and prediction layer for UTKARSH. Its capabilities will need to be developed and validated using labelled field data and expert observations.</p></div>
+ <div class="ai-points reveal">
+  <div class="ai-point"><b>01 &nbsp; Analyse patterns</b><span>Study plant and soil readings over time to identify patterns associated with water stress.</span></div>
+  <div class="ai-point"><b>02 &nbsp; Flag early stress</b><span>Explore alerts when readings move outside expected ranges.</span></div>
+  <div class="ai-point"><b>03 &nbsp; Improve decisions</b><span>Use accumulated data to support irrigation timing and plant-health trend analysis.</span></div>
+ </div>
+</div></section>
+<section class="prototype" id="prototype"><div class="wrap">
+ <div class="section-head reveal"><div class="kicker">05 / The prototype</div><h2>A practical concept built with accessible components.</h2><p>UTKARSH brings together electronics, plant monitoring and irrigation control in a student-built prototype.</p></div>
+ <div class="prototype-grid">
+  <div class="proto-card reveal"><h3>Controller & sensing</h3><ul><li>Arduino processing unit</li><li>Sap-flow-based plant sensor</li><li>Soil moisture and other parameter sensors</li></ul></div>
+  <div class="proto-card reveal"><h3>Signal & display</h3><ul><li>BC547 transistor for signal amplification</li><li>LED bar-graph health indication</li><li>Preset threshold-based evaluation</li></ul></div>
+  <div class="proto-card reveal"><h3>Irrigation & power</h3><ul><li>Automatic irrigation activation</li><li>Solar panel with tracker</li><li>Integrated system operation</li></ul></div>
+  <div class="proto-card reveal"><h3>Next validation priorities</h3><ul><li>Repeatability and sensor calibration</li><li>Irrigation response and reliability</li><li>Crop-specific thresholds and field trials</li></ul></div>
+ </div>
+</div></section>
+<section class="business" id="business"><div class="wrap">
+ <div class="section-head reveal"><div class="kicker">06 / Business opportunity</div><h2>Designed for growers. Built to grow.</h2><p>UTKARSH's proposed customer segments and revenue streams will be tested through interviews and field pilots.</p></div>
+ <div class="business-grid">
+  <article class="business-card reveal"><div class="symbol">🌾</div><h3>Small-scale farmers</h3><p>Affordable monitoring and more targeted irrigation for day-to-day crop management.</p></article>
+  <article class="business-card reveal"><div class="symbol">🏙️</div><h3>Urban growers</h3><p>Support for crops grown in space- and water-constrained environments.</p></article>
+  <article class="business-card reveal"><div class="symbol">🌱</div><h3>Greenhouses & nurseries</h3><p>More consistent plant monitoring across growing areas.</p></article>
+ </div>
+ <div class="price-panel reveal">
+  <div><strong>₹2,000</strong><span>Approximate current prototype cost per unit</span></div>
+  <div><strong>₹1.2 lakh</strong><span>Estimated deployment cost per acre</span></div>
+  <div><strong>25 units</strong><span>Included in the stated per-acre estimate</span></div>
+ </div>
+ <p class="price-caveat reveal">These are project cost estimates, not confirmed retail prices or measured customer savings. Commercial pricing, margins, installation costs and payback period remain to be established.</p>
+ <div class="business-grid" style="margin-top:18px">
+  <article class="business-card reveal"><div class="symbol">📦</div><h3>Hardware sales</h3><p>Proposed sales of UTKARSH units to growers, nurseries and farms.</p></article>
+  <article class="business-card reveal"><div class="symbol">🛠️</div><h3>Installation & support</h3><p>Potential site setup, integration, maintenance and calibration services.</p></article>
+  <article class="business-card reveal"><div class="symbol">📈</div><h3>Future data services</h3><p>Potential dashboard, alerts or analytics subscription as the product develops.</p></article>
+ </div>
+</div></section>
+<section id="impact"><div class="wrap">
+ <div class="section-head reveal"><div class="kicker">07 / Purpose & impact</div><h2>Innovation with a wider purpose.</h2><p>UTKARSH aims to support more informed irrigation decisions and sustainable technology adoption.</p></div>
+ <div class="impact-grid">
+  <article class="sdg reveal"><div class="sdg-no">SDG 02</div><h3>Zero Hunger</h3><p>Support better crop productivity and food security through plant-informed irrigation.</p></article>
+  <article class="sdg reveal"><div class="sdg-no">SDG 07</div><h3>Affordable & Clean Energy</h3><p>Use solar-powered technology to reduce dependence on conventional grid electricity.</p></article>
+  <article class="sdg reveal"><div class="sdg-no">SDG 09</div><h3>Industry, Innovation & Infrastructure</h3><p>Explore accessible agri-tech innovation through sensing, automation and field validation.</p></article>
+ </div>
+</div></section>
+<section class="cta" id="connect"><div class="wrap cta-box">
+ <div class="reveal"><div class="eyebrow">08 / The next step</div><h2>Let's help smarter<br>agriculture take root.</h2><p>We are seeking expert mentorship, agricultural guidance, financial support and testing opportunities to refine our prototype, improve its accuracy and make it more affordable.</p></div>
+ <div class="reveal"><a class="btn light" href="mailto:?subject=UTKARSH%20%E2%80%94%20Team%20MindForge">Discuss a partnership ↗</a><p style="font-size:10px;max-width:250px">Team MindForge<br>Rukmini Devi Public School · Delhi, India</p></div>
+</div></section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><div><strong>UTKARSH</strong> &nbsp;·&nbsp; POWERING SMARTER AGRICULTURE</div><div>Team MindForge · Rukmini Devi Public School</div><div>When plants thrive, farmers thrive.</div></div></footer>
+<script>
+const menu=document.getElementById('menu'),links=document.getElementById('navlinks');
+menu.addEventListener('click',()=>links.classList.toggle('open'));
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
