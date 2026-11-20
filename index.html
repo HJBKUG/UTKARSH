@@ -25,7 +25,19 @@ section{padding:100px 0}.section-head{max-width:650px;margin-bottom:44px}.kicker
 .impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.sdg{border:1px solid var(--line);border-radius:20px;padding:23px;background:#fff}.sdg .sdg-no{font:800 12px Manrope;color:var(--green)}.sdg h3{font-size:17px;margin:12px 0 6px}.sdg p{font-size:12px;color:var(--muted);line-height:1.7;margin:0}
 .cta{padding:85px 0;background:var(--dark);color:white}.cta-box{display:flex;justify-content:space-between;align-items:center;gap:35px}.cta h2{font-size:clamp(30px,4vw,48px);letter-spacing:-.05em;line-height:1.08;margin:13px 0}.cta p{color:#b9cbbd;line-height:1.7;font-size:13px;max-width:570px}.footer{background:#07170f;color:#a9b9ac;padding:26px 0;font-size:11px}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer strong{color:white;letter-spacing:.1em}
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:none}
-@media(max-width:850px){.navlinks{display:none;position:absolute;top:77px;left:0;right:0;background:var(--bg);padding:20px 24px 25px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu{display:block}.nav-cta{display:none}.hero-grid,.solution-grid,.ai-grid{grid-template-columns:1fr}.hero{padding:70px 0 55px}.visual{min-height:340px}.solution-art{min-height:300px}.metric-grid{grid-template-columns:repeat(2,1fr);gap:18px}.metric:nth-child(2){border:0}.metric:nth-child(3){padding-left:0}.steps{grid-template-columns:repeat(2,1fr)}.business-grid,.impact-grid{grid-template-columns:1fr 1fr}.cta-box{align-items:flex-start;flex-direction:column}}
+
+.cost-table-wrap{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:20px}
+.cost-table{width:100%;border-collapse:collapse;min-width:720px;text-align:left}
+.cost-table th{background:#f0f4eb;color:var(--green);font:800 12px Manrope;letter-spacing:.04em;padding:17px 18px}
+.cost-table td{padding:15px 18px;border-top:1px solid var(--line);font-size:12px;line-height:1.65;color:#536257;vertical-align:top}
+.cost-table td:first-child{font-weight:700;color:var(--ink);width:27%}
+.cost-table td:nth-child(2){font-weight:800;color:var(--green);white-space:nowrap;width:15%;font-variant-numeric:tabular-nums}
+.cost-table tfoot td{background:#e6efdf;color:var(--dark);font-weight:800;font-size:14px}
+.quantity-explainer{margin-top:24px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px}
+.quantity-explainer h3{font-size:23px;margin:10px 0}
+.quantity-explainer p,.quantity-explainer li{font-size:13px;line-height:1.8;color:var(--muted)}
+.quantity-explainer ul{padding-left:20px;margin-bottom:0}
+\n@media(max-width:850px){.navlinks{display:none;position:absolute;top:77px;left:0;right:0;background:var(--bg);padding:20px 24px 25px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu{display:block}.nav-cta{display:none}.hero-grid,.solution-grid,.ai-grid{grid-template-columns:1fr}.hero{padding:70px 0 55px}.visual{min-height:340px}.solution-art{min-height:300px}.metric-grid{grid-template-columns:repeat(2,1fr);gap:18px}.metric:nth-child(2){border:0}.metric:nth-child(3){padding-left:0}.steps{grid-template-columns:repeat(2,1fr)}.business-grid,.impact-grid{grid-template-columns:1fr 1fr}.cta-box{align-items:flex-start;flex-direction:column}}
 @media(max-width:560px){.wrap{width:min(100% - 32px,1160px)}nav{height:68px}.navlinks{top:67px}.hero{padding:58px 0 45px}h1{font-size:51px}.hero p{font-size:14px}.visual{min-height:290px}.orbit{width:280px}.plant{font-size:112px}.sun{width:55px;height:55px}.orbit-tag{font-size:9px;padding:9px 10px}.tag-a{left:-20px}.tag-b{right:-22px}.metric{padding:5px 13px}.metric strong{font-size:21px}section{padding:72px 0}.problem-grid,.steps,.prototype-grid,.business-grid,.impact-grid{grid-template-columns:1fr}.insight{align-items:flex-start;flex-direction:column}.price-panel{grid-template-columns:1fr;padding:25px}.price-panel strong{font-size:27px}.footer-inner{align-items:flex-start;flex-direction:column}.cta{padding:70px 0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*{transition:none!important}}
 </style>
@@ -34,7 +46,7 @@ section{padding:100px 0}.section-head{max-width:650px;margin-bottom:44px}.kicker
 <nav>
  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between">
   <a class="brand" href="#home"><span class="brand-mark">✳</span><span>UTKARSH<small>TEAM MINDFORGE</small></span></a>
-  <div class="navlinks" id="navlinks"><a href="#problem">The challenge</a><a href="#solution">Our solution</a><a href="#technology">Technology</a><a href="#business">Business</a><a href="#impact">Impact</a></div>
+  <div class="navlinks" id="navlinks"><a href="#problem">The challenge</a><a href="#solution">Our solution</a><a href="#technology">Technology</a><a href="#business">Per-acre cost</a><a href="#impact">Impact</a></div>
   <a class="nav-cta" href="#connect">Partner with us ↗</a><button class="menu" id="menu" aria-label="Toggle navigation">☰</button>
  </div>
 </nav>
@@ -60,7 +72,7 @@ section{padding:100px 0}.section-head{max-width:650px;margin-bottom:44px}.kicker
 <div class="metrics"><div class="wrap metric-grid">
  <div class="metric"><strong>Plant-informed</strong><span>Monitoring approach</span></div>
  <div class="metric"><strong>Solar-powered</strong><span>Designed for sustainable operation</span></div>
- <div class="metric"><strong>₹2,000</strong><span>Approx. prototype cost per unit</span></div>
+ <div class="metric"><strong>₹66,875</strong><span>Target deployment cost per acre</span></div>
  <div class="metric"><strong>25 units</strong><span>In estimated per-acre deployment</span></div>
 </div></div>
 <section id="problem"><div class="wrap">
@@ -114,23 +126,41 @@ section{padding:100px 0}.section-head{max-width:650px;margin-bottom:44px}.kicker
  </div>
 </div></section>
 <section class="business" id="business"><div class="wrap">
- <div class="section-head reveal"><div class="kicker">06 / Business opportunity</div><h2>Designed for growers. Built to grow.</h2><p>UTKARSH's proposed customer segments and revenue streams will be tested through interviews and field pilots.</p></div>
- <div class="business-grid">
-  <article class="business-card reveal"><div class="symbol">🌾</div><h3>Small-scale farmers</h3><p>Affordable monitoring and more targeted irrigation for day-to-day crop management.</p></article>
-  <article class="business-card reveal"><div class="symbol">🏙️</div><h3>Urban growers</h3><p>Support for crops grown in space- and water-constrained environments.</p></article>
-  <article class="business-card reveal"><div class="symbol">🌱</div><h3>Greenhouses & nurseries</h3><p>More consistent plant monitoring across growing areas.</p></article>
+ <div class="section-head reveal"><div class="kicker">06 / Per-acre deployment plan</div><h2>What it takes to equip one acre.</h2><p>The following target budget estimates the components, integration and installation planned for a one-acre UTKARSH deployment.</p></div>
+ <div class="cost-table-wrap reveal">
+  <table class="cost-table">
+   <thead><tr><th>Component</th><th>Target cost</th><th>What it does</th></tr></thead>
+   <tbody>
+    <tr><td>25 capacitive sensors</td><td>₹1,125</td><td>Measure soil moisture at different locations in the field.</td></tr>
+    <tr><td>5 sap sensors</td><td>₹750</td><td>Monitor water movement inside plants to understand their water requirements.</td></tr>
+    <tr><td>5 solar tracking mechanisms</td><td>₹20,000</td><td>Adjust solar panels towards sunlight to improve energy collection.</td></tr>
+    <tr><td>2 HP surface pump</td><td>₹12,000</td><td>Pumps water from a water source to the agricultural field.</td></tr>
+    <tr><td>Hybrid pump controller/drive</td><td>₹12,000</td><td>Controls the pump and manages its power supply.</td></tr>
+    <tr><td>Central controller</td><td>₹1,500</td><td>Acts as the main control unit that receives sensor data and makes decisions.</td></tr>
+    <tr><td>Multiplexing and interface electronics</td><td>₹2,000</td><td>Allows multiple sensors to communicate with the central controller.</td></tr>
+    <tr><td>Wiring and connectors</td><td>₹2,500</td><td>Connect all sensors, controllers, solar mechanisms and pump systems.</td></tr>
+    <tr><td>Weatherproof enclosures</td><td>₹2,000</td><td>Protect electronic components from rain, dust and moisture.</td></tr>
+    <tr><td>Pump automation and protection</td><td>₹3,000</td><td>Automates pump operation and provides protection against electrical faults.</td></tr>
+    <tr><td>Assembly and calibration</td><td>₹3,000</td><td>Covers assembling the system and setting up sensors for accurate readings.</td></tr>
+    <tr><td>Installation</td><td>₹3,000</td><td>Covers installing the complete system in the field.</td></tr>
+    <tr><td>Contingency</td><td>₹4,000</td><td>Extra budget for unexpected expenses or small additional components.</td></tr>
+   </tbody>
+   <tfoot><tr><td>Total target cost per acre</td><td>₹66,875</td><td>Complete planned deployment budget</td></tr></tfoot>
+  </table>
  </div>
- <div class="price-panel reveal">
-  <div><strong>₹2,000</strong><span>Approximate current prototype cost per unit</span></div>
-  <div><strong>₹1.2 lakh</strong><span>Estimated deployment cost per acre</span></div>
-  <div><strong>25 units</strong><span>Included in the stated per-acre estimate</span></div>
+ <div class="quantity-explainer reveal">
+  <div class="kicker">02 / Quantity rationale</div>
+  <h3>Why are these quantities required?</h3>
+  <p>The quantities are planned for one acre:</p>
+  <ul>
+   <li><b>25 soil moisture sensors:</b> The acre is divided into 25 monitoring points, so soil moisture can be checked in different parts of the field.</li>
+   <li><b>5 sap flow sensors:</b> These monitor selected plants to understand their water requirements.</li>
+   <li><b>5 solar tracking mechanisms:</b> These are intended to improve solar energy collection at different points.</li>
+   <li><b>1 central controller:</b> Collects information from the sensors and coordinates the system.</li>
+   <li><b>1 pump system:</b> Supplies water when irrigation is required.</li>
+  </ul>
  </div>
- <p class="price-caveat reveal">These are project cost estimates, not confirmed retail prices or measured customer savings. Commercial pricing, margins, installation costs and payback period remain to be established.</p>
- <div class="business-grid" style="margin-top:18px">
-  <article class="business-card reveal"><div class="symbol">📦</div><h3>Hardware sales</h3><p>Proposed sales of UTKARSH units to growers, nurseries and farms.</p></article>
-  <article class="business-card reveal"><div class="symbol">🛠️</div><h3>Installation & support</h3><p>Potential site setup, integration, maintenance and calibration services.</p></article>
-  <article class="business-card reveal"><div class="symbol">📈</div><h3>Future data services</h3><p>Potential dashboard, alerts or analytics subscription as the product develops.</p></article>
- </div>
+ <p class="price-caveat reveal">These are target estimates for the proposed one-acre configuration, not confirmed supplier quotations. Final costs may vary with component specifications, field conditions, taxes and installation requirements.</p>
 </div></section>
 <section id="impact"><div class="wrap">
  <div class="section-head reveal"><div class="kicker">07 / Purpose & impact</div><h2>Innovation with a wider purpose.</h2><p>UTKARSH aims to support more informed irrigation decisions and sustainable technology adoption.</p></div>
